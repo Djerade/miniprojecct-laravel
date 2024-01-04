@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    noous domme dans contact
-    {{ $myname }}
+    nous somme iici
 </body>
 </html>

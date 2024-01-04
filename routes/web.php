@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +22,9 @@ use Illuminate\Support\Facades\Route;
 //     return "hello world";
 // });
 
-Route::get('/', function () {
-    $myname = 'perfect';
-    return view('index', compact("myname"));
-});
+// Route::get('/', function () {
+//     $myname = 'perfect';
+//     return view('index', compact("myname"));
+// });
 
+Route::get("/index", [PostController::class, "getPost"]);
